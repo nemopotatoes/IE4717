@@ -107,3 +107,19 @@ footer {
 .musicWrapper td, tr {
     padding: 0px 20px 0px 20px;
 }
+
+/* job styles */
+
+label {
+    float: left;
+    text-align: right;
+    width: 120px;
+}
+
+input {
+    margin: 0px 0px 0px 20px;
+}
+
+textarea {
+    margin: 0px 0px 0px 20px;
+}
