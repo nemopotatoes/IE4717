@@ -73,22 +73,25 @@ footer {
 
 /* menu table styles */
 
-menutable {
+.menutable {
     border: none;
     border-spacing: 2px;
     margin-left: 100px;
     width: 80%;
 }
 
-tr:nth-of-type(odd) {
+.menutable tr:nth-of-type(odd) {
     background-color: #D2B48C;
 }
 
-td:first-of-type {
+.menutable td:first-of-type {
     text-align: center;
     font-weight: bold;
 }
 
-td, tr {
+.menutable td, tr {
     padding: 20px;
 }
+
+/* music styles */
+
