@@ -1,2 +1,2 @@
 # IE4717
- A Collection of all my assignments and design project for IE4717 Web Application Design
+ A collection of all my assignments for IE4717 Web Application Design
