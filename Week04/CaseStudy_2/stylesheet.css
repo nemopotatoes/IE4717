@@ -39,7 +39,7 @@ nav a:visited { color: #A58366; }
 
 .content {
     margin-left: 150px;
-    padding: 1px 0px 20px 20px;
+    padding: 1px 20px 20px 20px;
     background-color: #F5F5DC;
 }
 
@@ -95,3 +95,15 @@ footer {
 
 /* music styles */
 
+.musicWrapper {
+    margin-left: 200px;
+    padding-right: 200px;
+}
+
+.musicWrapper h3 {
+    background-color:#e2d2b0;
+}
+
+.musicWrapper td, tr {
+    padding: 0px 20px 0px 20px;
+}
