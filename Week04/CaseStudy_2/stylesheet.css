@@ -43,6 +43,8 @@ nav a:visited { color: #A58366; }
     background-color: #F5F5DC;
 }
 
+/* index styles */
+
 .content ul {
     padding-left: 395px;
 }
@@ -54,6 +56,10 @@ nav a:visited { color: #A58366; }
     background-position: left center;
     background-size: 20px;
     padding: 5px 0px 0px 25px;
+}
+
+#indexAddress {
+    padding-left: 395px;
 }
 
 #coffeehouseimage {
