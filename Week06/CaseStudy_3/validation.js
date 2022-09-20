@@ -3,7 +3,7 @@ function chkName(event) {
     var candName = event.currentTarget;
 
     // test input name: allow alphabets and character spaces
-    var pos = candName.value.search(/^[A-Z][a-z]+ ?$/);
+    var pos = candName.value.search(/^[A-Za-z]+ ?$/);
 
     if (pos != 0) {
         alert("The name you entered (" + candName.value +
@@ -11,6 +11,7 @@ function chkName(event) {
         "Special Characters are not allowed.");
         candName.focus();
         candName.select();
+		document.getElementById('CandidateName').value = "";
         return false;
     }
 }
@@ -20,13 +21,14 @@ function chkEmail(event) {
     var candEmail = event.currentTarget;
     
     // Test the format of the input email
-    var pos = candEmail.value.search(/^[\w][\w.-]*@([\w][\w-]*\.){1,4}[a-zA-Z]{2,3}$/);
+    var pos = candEmail.value.search(/^[\w][\w.-]*@([\w][\w-]*\.){2,4}[a-zA-Z]{2,3}$/);
     
     if (pos != 0) {
-        alert("The name you entered (" + candEmail.value + 
+        alert("The email you entered (" + candEmail.value + 
               ") is not in the correct form. \n");
         candEmail.focus();
         candEmail.select();
+		document.getElementById('email').value = "";
         return false;
     }
 }
@@ -40,6 +42,7 @@ function chkDate(value) {
     if (inputDate != '') {
         if (inputDate < now) {
             alert("You cannot start before today!");
+			document.getElementById('startDate').value = "";
             return false;
         }
         else 
