@@ -3,7 +3,7 @@ function chkName(event) {
     var candName = event.currentTarget;
 
     // test input name: allow alphabets and character spaces
-    var pos = candName.value.search(/^[A-Za-z]+ ?$/);
+    var pos = candName.value.search(/^[A-Za-z ]+$/);
 
     if (pos != 0) {
         alert("The name you entered (" + candName.value +
@@ -21,7 +21,7 @@ function chkEmail(event) {
     var candEmail = event.currentTarget;
     
     // Test the format of the input email
-    var pos = candEmail.value.search(/^[\w][\w.-]*@([\w][\w-]*\.){2,4}[a-zA-Z]{2,3}$/);
+    var pos = candEmail.value.search(/^[\w][\w.-]*@([\w][\w-]*\.){1,3}[a-zA-Z]{2,3}$/);
     
     if (pos != 0) {
         alert("The email you entered (" + candEmail.value + 
