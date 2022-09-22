@@ -9,7 +9,7 @@
 
 header {
     background-color: #D2B48C;
-    background-image: url("./assets/JavaJamHomepageHeader.gif");
+    background-image: url(assets/JavaJamHomepageHeader.gif);
     background-position: center;
     background-repeat: no-repeat;
     height: 100px;
@@ -51,7 +51,7 @@ nav a:visited { color: #A58366; }
 
 .content li {
     list-style: none;
-    background-image: url("./assets/coffee_bulletpoint.jpg");
+    background-image: url(assets/coffee_bulletpoint.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
