@@ -13,15 +13,12 @@
      echo 'You have not entered search details.  Please go back and try again.';
      exit;
   }
-$magic = get_magic_quotes_gpc();
-var_dump($magic);
-echo "<br>magic: ".$magic."<br>";
-  if (!get_magic_quotes_gpc()){
-    $searchtype = addslashes($searchtype);
-    $searchterm = addslashes($searchterm);
-  }
 
-  @ $db = new mysqli('localhost', 'f32ee', 'f32ee', 'f32ee');
+  $searchtype = addslashes($searchtype);
+  $searchterm = addslashes($searchterm);
+
+
+  @ $db = new mysqli('localhost', 'root', '', 'myuser');
 
   if (mysqli_connect_errno()) {
      echo 'Error: Could not connect to database.  Please try again later.';

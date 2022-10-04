@@ -17,14 +17,12 @@
      exit;
   }
 
-  if (!get_magic_quotes_gpc()) {
     $isbn = addslashes($isbn);
     $author = addslashes($author);
     $title = addslashes($title);
     $price = doubleval($price);
-  }
 
-  @ $db = new mysqli('localhost', 'f32ee', 'f32ee', 'f32ee');
+  @ $db = new mysqli('localhost', 'root', '', 'myuser');
 
   if (mysqli_connect_errno()) {
      echo "Error: Could not connect to database.  Please try again later.";
