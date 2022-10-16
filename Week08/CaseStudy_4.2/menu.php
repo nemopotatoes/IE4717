@@ -20,6 +20,9 @@
 					<li><a href="menu.php">Menu</a></li>
 					<li><a href="music.html">Music</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
+					<br><br>
+					<li><u>Admin</u></li>
+					<li><a href="updateprice.php">Prices</a></li>
 				</b>
 			</ul>
 		</nav>
@@ -29,7 +32,6 @@
 		<form id="order-form">
 			<table class="menutable">
 				<tr>
-					<td></td>
 					<td><b>Just Java</b></td>
 					<td>
 						<div>
