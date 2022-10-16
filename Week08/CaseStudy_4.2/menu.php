@@ -1,3 +1,5 @@
+<?php include "php/fetchPrices.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
 			<ul> 
 				<b>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.html">Menu</a></li>
+					<li><a href="menu.php">Menu</a></li>
 					<li><a href="music.html">Music</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
 				</b>
