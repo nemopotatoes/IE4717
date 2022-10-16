@@ -1,5 +1,5 @@
 <?php
-include "php/filltable.php";
+include "php/fetchPrices.php";
 ?>
 
 <!DOCTYPE html>
