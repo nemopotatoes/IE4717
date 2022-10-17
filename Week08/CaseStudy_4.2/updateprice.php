@@ -19,12 +19,12 @@ include "php/fetchPrices.php";
 			<ul> 
 				<b>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.html">Menu</a></li>
+					<li><a href="menu.php">Menu</a></li>
 					<li><a href="music.html">Music</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
 					<br><br>
 					<li><u>Admin</u></li>
-					<li><a href="updateprice.html">Price</a></li>
+					<li><a href="updateprice.html">Prices</a></li>
 				</b>
 			</ul>
 		</nav>
@@ -41,7 +41,8 @@ include "php/fetchPrices.php";
 						<td><b>Just Java</b></td>
 						<td>Regular house blend, decaffeinated coffee, 
 							or flavor of the day. <br><br>
-							<b>Endless Cup $<?php insert_table_row(1) ?></b><span id="justjavaPrice"></span><br> New Price:<input formnovalidate name="endless-just-java">
+							<b>Endless Cup $<?php insert_table_row(1) ?></b><span id="justjavaPrice"></span>
+							<br> New Price:<input formnovalidate name="endless-just-java">
 							
 						</td>
 					</tr>
@@ -52,9 +53,11 @@ include "php/fetchPrices.php";
 						<td><b>Cafe au Lait</b></td>
 						<td>House blended coffee infused into a smooth, 
 							steamed milk. <br><br>
-							<b>Single $<?php insert_table_row(2) ?></b><span id="cafesinglePrice"></span><br> New Price:<input formnovalidate name="single-cafeaulait"> 
+							<b>Single $<?php insert_table_row(2) ?></b><span id="cafesinglePrice"></span>
+							<br> New Price:<input formnovalidate name="single-cafeaulait"> 
 							
-							<br><br><b>Double $<?php insert_table_row(3) ?><span id="cafedoublePrice"></b></span><br> New Price:<input formnovalidate name="double-cafeaulait"></b>
+							<br><br><b>Double $<?php insert_table_row(3) ?><span id="cafedoublePrice"></b></span>
+							<br> New Price:<input formnovalidate name="double-cafeaulait"></b>
 							
 						</td>
 					</tr>
@@ -65,9 +68,11 @@ include "php/fetchPrices.php";
 						<td><b>Iced Cappuccino</b></td>
 						<td>Sweetened espresso blended with icy-cold milk 
 							and served in a chilled glass. <br><br>
-							<b>Single $<?php insert_table_row(4) ?></b><span id="cappuccinosinglePrice"></span><br> New Price:<input formnovalidate name="single-cappuccino">
+							<b>Single $<?php insert_table_row(4) ?></b><span id="cappuccinosinglePrice"></span>
+							<br> New Price:<input formnovalidate name="single-cappuccino">
 							
-								<br><br><b>Double $<?php insert_table_row(5) ?></b><span id="cappuccinodoublePrice"></span><br> New Price:<input formnovalidate name="double-cappuccino"></b>
+								<br><br><b>Double $<?php insert_table_row(5) ?></b><span id="cappuccinodoublePrice"></span>
+								<br> New Price:<input formnovalidate name="double-cappuccino"></b>
 								
 						</td>
 					</tr>

@@ -10,23 +10,7 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-//Testing if database exists with a random query. 
-/*
-$sql = "SELECT * from javajam.products";
 
-if (!mysqli_query($conn, $sql)) { //If the DB doesn't exist, we need to create it. Else, go to line 68 and close the DB. 
-
-	// If DB doesn't exist, we create it 
-
-	$sql = "CREATE DATABASE IF NOT EXISTS javajam";
-
-	if (!mysqli_query($conn, $sql)) {
-		echo "Error creating database: " . mysqli_error($conn);
-		mysqli_close($conn);
-	}
-
-	//Switch to javajam database.
-*/
 $sql = "use javajam";
 if (!mysqli_query($conn, $sql)) {
 	echo "Failed to switch tables, check use statement.";
@@ -46,7 +30,6 @@ if (!mysqli_query($conn, $sql)) {
 }
 
 //Fill tables with data
-
 $sql = "INSERT INTO products (productID, productName, productPrice)
 VALUES (1, 'endless_cup', 2.00);";
 $sql .= "INSERT INTO products (productID, productName, productPrice)

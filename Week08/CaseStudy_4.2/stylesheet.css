@@ -99,6 +99,10 @@ footer {
     padding: 20px;
 }
 
+.orderButton {
+    text-align: center;
+}
+
 /* music styles */
 
 .musicWrapper {

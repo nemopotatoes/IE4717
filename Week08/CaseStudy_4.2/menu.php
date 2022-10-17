@@ -17,7 +17,7 @@
 			<ul> 
 				<b>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.php">Menu</a></li>
+					<li><a href="menu.html">Menu</a></li>
 					<li><a href="music.html">Music</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
 					<br><br>
@@ -29,7 +29,7 @@
 	</div>
 	<div class="content">
 		<h1>Coffee at JavaJam</h1>
-		<form id="order-form">
+		<form id="order-form" action="php/updateOrder.php" method="post">
 			<table class="menutable">
 				<tr>
 					<td><b>Just Java</b></td>
@@ -113,6 +113,10 @@
 					</td>
 				</tfoot>
 			</table>
+			<div class="orderButton">
+				<br>
+				<input type="submit"; value="Place Order">
+			</div>
 		</form>
 	</div>
 	<footer>

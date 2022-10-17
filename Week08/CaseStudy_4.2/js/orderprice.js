@@ -7,7 +7,7 @@ const qtyCafeAuLait = document.getElementById('qty-cafeaulait');
 const qtyCappuccino = document.getElementById('qty-cappuccino');
 
 // radio elements (just justjava)
-const justJava = document.getElementById('endless-just-java')
+const justJava = document.getElementById('endless-just-java');
 
 // subtotals
 const subJustJava = document.getElementById('subtotal-just-java');
