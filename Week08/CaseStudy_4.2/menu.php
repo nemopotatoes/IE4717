@@ -23,6 +23,7 @@
 					<br><br>
 					<li><u>Admin</u></li>
 					<li><a href="updateprice.php">Prices</a></li>
+					<li><a href="report.php">Report</a></li>
 				</b>
 			</ul>
 		</nav>

@@ -78,7 +78,7 @@ function updateOrderTable($qty, $productID) {
 		die("Connection failed: " . mysqli_connect_error());
 		return;
 	}
- 	$sql = "INSERT INTO orders (orderID, productID, qty) VALUES (NULL, $productID, $qty);";
+ 	$sql = "INSERT INTO orders (productID, qty) VALUES ($productID, $qty);";
 	if (!mysqli_query($conn, $sql)) {
 		echo "Failed to update database: " . mysqli_error($conn);
 		mysqli_close($conn);

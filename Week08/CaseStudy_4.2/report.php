@@ -1,9 +1,12 @@
+<?php include "php/fetchPrices.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>JavaJam Coffee House</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="stylesheet.css">
+	<script defer src="./js/orderprice.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -14,7 +17,7 @@
 			<ul> 
 				<b>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.php">Menu</a></li>
+					<li><a href="menu.html">Menu</a></li>
 					<li><a href="music.html">Music</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
 					<br><br>
@@ -26,18 +29,14 @@
 		</nav>
 	</div>
 	<div class="content">
-		<h1>Follow the Winding Road to JavaJam</h1>
-		<img src="./assets/coffeehouse.jpg" width="300" height="150" id="coffeehouseimage" alt="Road to JavaJam">
-		<!-- Image taken from: https://userpages.umbc.edu/~geet2/ch10javajam/index.html -->
-		<ul>
-			<li>Specialty Coffee and Tea</li>
-			<li>Bagels, Muffins, and Organic Snacks</li>
-			<li>Music and Poetry Readings</li>
-			<li>Open Mic Night Every Friday</li>
-		</ul>
-		<p id="indexAddress">54321 Route 42<br>
-			Ellison Bay, WI 54210<br>
-			888-555-8888</p>
+        <br>
+		<h2>Click below to generate sales report:</h2>
+        <h4>
+            <li><a href="productReport.php">By Product</a></li>
+			<li><a href="categoryReport.php">By Category</a></li>
+        </h4>
+        <h3>Popular option of best selling product:</h3>
+        <br>
 	</div>
 	<footer>
 		Copyright &copy; 2014 JavaJam Coffeee House<br>

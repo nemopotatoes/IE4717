@@ -35,6 +35,7 @@ nav a {
     font-weight: bolder;
     font-size: large;
 }
+
 nav a:visited { color: #A58366; }
 
 .content {
@@ -136,4 +137,12 @@ input {
 
 textarea {
     margin: 0px 0px 0px 20px;
+}
+
+/* report styles */
+h4 a { 
+    text-decoration: none; 
+    color: #7d5540;
+    font-weight: bolder;
+    font-size: large;
 }
