@@ -40,14 +40,14 @@
 							or flavor of the day. <br>
 						</div>
 						<div>
-							<input type="radio" name="justJava"
+							<input formnovalidate type="radio" name="justJava"
 							id="endless-just-java" value="2.00">
 							<b>Endless Cup $2.00</b>
 						</div>
 					</td>
 					<td>
 						<label for="qty-just-java">Qty: </label>
-						<input type="number" min="0" value="0" name="qtyJustJava"
+						<input formnovalidate type="number" min="0" value="0" name="qtyJustJava"
 						id="qty-just-java"></input>
 					</td>
 					<td class="subtotal">
@@ -62,11 +62,11 @@
 							steamed milk. <br>
 						</div>
 						<div>
-							<input type="radio" name="cafeaulait"
+							<input formnovalidate type="radio" name="cafeaulait"
 							id="single-cafeaulait" value="2.00">
 								<b>Single $2.00</b>
 							</input>
-							<input type="radio" name="cafeaulait"
+							<input formnovalidate type="radio" name="cafeaulait"
 							id="double-cafeaulait" value="3.00">
 								<b>Double $3.00</b>
 							</input>
@@ -74,7 +74,7 @@
 					</td>
 					<td>
 						<label for="qty-cafeaulait">Qty: </label>
-						<input type="number" min="0" value="0" name="qtyCafeAuLait"
+						<input formnovalidate type="number" min="0" value="0" name="qtyCafeAuLait"
 						id="qty-cafeaulait"></input>
 					</td>
 					<td class="subtotal">
@@ -89,11 +89,11 @@
 							and served in a chilled glass. <br>
 						</div>
 						<div>
-							<input type="radio" name="cappuccino"
+							<input formnovalidate type="radio" name="cappuccino"
 							id="single-cappuccino" value="4.75">
 								<b>Single $4.75</b>
 							</input>
-							<input type="radio" name="cappuccino"
+							<input formnovalidate type="radio" name="cappuccino"
 							id="double-cappuccino" value="5.75">
 								<b>Double $5.75</b>
 							</input>
@@ -101,7 +101,7 @@
 					</td>
 					<td>
 						<label for="qty-cappuccino">Qty: </label>
-						<input type="number" min="0" value="0" name="qtyCappuccino"
+						<input formnovalidate type="number" min="0" value="0" name="qtyCappuccino"
 						id="qty-cappuccino"></input>
 					</td>
 					<td class="subtotal">

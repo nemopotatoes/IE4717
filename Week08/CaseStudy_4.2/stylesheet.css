@@ -148,13 +148,13 @@ h4 a {
 }
 
 .productReport {
-    border: none;
+    border-collapse: collapse;
     border-spacing: 2px;
     margin-left: 100px;
     width: 80%;
 }
 
-.productReport td, tr {
+.productReport td, th {
     padding: 20px;
     text-align: center;
 }

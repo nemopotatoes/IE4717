@@ -45,27 +45,27 @@ include "php/fetchReport.php";
                     <td><?php productQty(1) ?></td>
                     <td>/</td>
                     <td>/</td>
-                    <td><?php productQty(1) ?></td>
+                    <td><b><?php productQty(1) ?></b></td>
 				<tr>
 					<td><b>Cafe au Lait</b></td>
                     <td>/</td>
                     <td><?php productQty(2) ?></td>
                     <td><?php productQty(3) ?></td>
-                    <td><?php sumTotal(2, 3) ?></td>
+                    <td><b><?php sumTotal(2, 3) ?></b></td>
 				</tr>
                 <tr>
                     <td><b>Iced Cappuccino</b></td>
                     <td>/</td>
                     <td><?php productQty(4) ?></td>
                     <td><?php productQty(5) ?></td>
-                    <td><?php sumTotal(4, 5) ?></td>
+                    <td><b><?php sumTotal(4, 5) ?></b></td>
 				</tr>
 				<tr>
                     <td><b>Total</b></td>
-                    <td><?php productQty(1) ?></td>
-                    <td><?php sumTotal(2, 4) ?></td>
-                    <td><?php sumTotal(3, 5) ?></td>
-                    <td><?php subTotal_total() ?></td>
+                    <td><b><?php productQty(1) ?></b></td>
+                    <td><b><?php sumTotal(2, 4) ?></b></td>
+                    <td><b><?php sumTotal(3, 5) ?></b></td>
+                    <td><b><?php subTotal_total() ?></b></td>
 				</tr>
 			</table>
 			<br><br>

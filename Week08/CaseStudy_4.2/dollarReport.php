@@ -42,12 +42,12 @@ include "php/fetchReport.php";
                     <td><b>Just Java</b></td>
                     <td><i>Endless Cup</i></td>
                     <td>$<?php insertCatSales(1) ?></td>
-                    <td>$<?php insertCatSales(1) ?></td>
+                    <td><b>$<?php insertCatSales(1) ?></b></td>
 				<tr>
 					<td rowspan="2"><b>Cafe au Lait</b></td>
                     <td><i>Single</i></td>
                     <td>$<?php insertCatSales(2) ?></td>
-                    <td colspan="2">$<?php insertCatSubTotal(2) ?></td>
+                    <td rowspan="2"><b>$<?php insertCatSubTotal(2) ?></b></td>
 				</tr>
 				<tr>
                     <td><i>Double</i></td>
@@ -58,7 +58,7 @@ include "php/fetchReport.php";
                     <td rowspan="2"><b>Iced Cappuccino</b></td>
                     <td><i>Single</i></td>
                     <td>$<?php insertCatSales(4) ?></td>
-                    <td colspan="2">$<?php insertCatSubTotal(4) ?></td>
+                    <td rowspan="2"><b>$<?php insertCatSubTotal(4) ?></b></td>
 				</tr>
                 <tr>
                     <td><i>Double</i></td>
@@ -67,7 +67,7 @@ include "php/fetchReport.php";
 				</tr>
 				<tfoot>
 					<td class="total" colspan="4">
-						Total: $<?php insertCatTotal() ?></span>
+						<b>Total:</b> $<?php insertCatTotal() ?></span>
 					</td>
 				</tfoot>
 			</table>

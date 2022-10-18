@@ -1,4 +1,5 @@
 <?php include "php/fetchPrices.php"; ?>
+<?php include "php/fetchReport.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +36,7 @@
             <li><a href="quantityReport.php">By Quantity Sales</a></li>
 			<li><a href="dollarReport.php">By Dollar Sales</a></li>
         </h4>
-        <h3>Popular option of best selling product:</h3>
+        <h3>Most Popular Product(s): <?php bestSelling() ?></h3>
         <br>
 	</div>
 	<footer>
