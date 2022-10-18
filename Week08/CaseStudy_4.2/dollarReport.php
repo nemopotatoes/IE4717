@@ -67,7 +67,7 @@ include "php/fetchReport.php";
 				</tr>
 				<tfoot>
 					<td class="total" colspan="4">
-						Total: $<?php insertCatTotal() ?>0</span>
+						Total: $<?php insertCatTotal() ?></span>
 					</td>
 				</tfoot>
 			</table>

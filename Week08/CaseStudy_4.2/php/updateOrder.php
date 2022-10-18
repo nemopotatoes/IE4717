@@ -66,10 +66,6 @@ if ($cafeqty > 0) {
 if ($cappuqty > 0) {
 	$totalOrder .= "$cappuqty Cappuccino for $$cappuTotal<br><br>";
 }
-echo $totalOrder;
-$menuLink = "<a href='../../menu.php'>Click here</a>";
-echo "Redirecting you to Menu page in 10 seconds. $menuLink to return to menu page now.";
-header("refresh:10;url=../../menu.php");
 return;
 
 function updateOrderTable($qty, $productID) {

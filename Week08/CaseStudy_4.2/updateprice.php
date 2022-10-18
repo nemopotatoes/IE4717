@@ -24,7 +24,8 @@ include "php/fetchPrices.php";
 					<li><a href="jobs.html">Jobs</a></li>
 					<br><br>
 					<li><u>Admin</u></li>
-					<li><a href="updateprice.html">Prices</a></li>
+					<li><a href="updateprice.php">Prices</a></li>
+					<li><a href="report.php">Report</a></li>
 				</b>
 			</ul>
 		</nav>
