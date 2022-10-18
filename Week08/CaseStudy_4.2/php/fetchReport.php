@@ -98,4 +98,93 @@ function insertCatTotal() {
     mysqli_close($conn);
 }
 
+function productQty($id) {
+    // connection 
+    $conn = mysqli_connect("localhost", "root", "", "javajam");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+        return;
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = $id;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		echo number_format((int)$row[0]);
+    }
+	// echo $row;
+    mysqli_close($conn);
+}
+
+function subTotal_total() {
+    // connection 
+    $conn = mysqli_connect("localhost", "root", "", "javajam");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+        return;
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = 1;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row1 = number_format((int)$row[0]);
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = 2;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row2 = number_format((int)$row[0]);
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = 3;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row3 = number_format((int)$row[0]);
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = 4;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row4 = number_format((int)$row[0]);
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = 5;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row5 = number_format((int)$row[0]);
+    }
+    $sum = $row1 + $row2 + $row3 + $row4 + $row5;
+    echo $sum;
+}
+
+function sumTotal($first, $second) {
+    // connection 
+    $conn = mysqli_connect("localhost", "root", "", "javajam");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+        return;
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = $first;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row1 = number_format((int)$row[0]);
+    }
+    $sql = "SELECT sum(qty) FROM orders WHERE productID = $second;";
+    if (!$result = mysqli_query($conn, $sql)) {
+        echo "Failed to get sales quantity: " . mysqli_error($conn);
+    } else {
+        $row = mysqli_fetch_row($result);
+		$row2 = number_format((int)$row[0]);
+    }
+    $sum = $row1 + $row2;
+    echo $sum;
+    mysqli_close($conn);
+}
 ?>

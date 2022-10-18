@@ -35,42 +35,41 @@ include "php/fetchReport.php";
 			<table class="productReport">
 				<tr>
 					<td><b>Product</b></td>
-					<td colspan="2"><b>Category</b></td>
+					<td><b><i>Endless Cup</i></b></td>
+					<td><b><i>Single</i></b></td>
+					<td><b><i>Double</i></b></td>
 					<td><b>Subtotal</b></td>
                 </tr>
                 <tr>
                     <td><b>Just Java</b></td>
-                    <td><i>Endless Cup</i></td>
-                    <td>$<?php insertCatSales(1) ?></td>
-                    <td>$<?php insertCatSales(1) ?></td>
+                    <td><?php productQty(1) ?></td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td><?php productQty(1) ?></td>
 				<tr>
-					<td rowspan="2"><b>Cafe au Lait</b></td>
-                    <td><i>Single</i></td>
-                    <td>$<?php insertCatSales(2) ?></td>
-                    <td colspan="2">$<?php insertCatSubTotal(2) ?></td>
-				</tr>
-				<tr>
-                    <td><i>Double</i></td>
-                    <td>$<?php insertCatSales(3) ?></td>
-                    <td></td>
+					<td><b>Cafe au Lait</b></td>
+                    <td>/</td>
+                    <td><?php productQty(2) ?></td>
+                    <td><?php productQty(3) ?></td>
+                    <td><?php sumTotal(2, 3) ?></td>
 				</tr>
                 <tr>
-                    <td rowspan="2"><b>Iced Cappuccino</b></td>
-                    <td><i>Single</i></td>
-                    <td>$<?php insertCatSales(4) ?></td>
-                    <td colspan="2">$<?php insertCatSubTotal(4) ?></td>
+                    <td><b>Iced Cappuccino</b></td>
+                    <td>/</td>
+                    <td><?php productQty(4) ?></td>
+                    <td><?php productQty(5) ?></td>
+                    <td><?php sumTotal(4, 5) ?></td>
 				</tr>
-                <tr>
-                    <td><i>Double</i></td>
-                    <td>$<?php insertCatSales(5) ?></td>
-                    <td></td>
+				<tr>
+                    <td><b>Total</b></td>
+                    <td><?php productQty(1) ?></td>
+                    <td><?php sumTotal(2, 4) ?></td>
+                    <td><?php sumTotal(3, 5) ?></td>
+                    <td><?php subTotal_total() ?></td>
 				</tr>
-				<tfoot>
-					<td class="total" colspan="4">
-						Total: $<?php insertCatTotal() ?>0</span>
-					</td>
-				</tfoot>
 			</table>
+			<br><br>
+			<h3>Best Selling Product(s):</h3>
 	</div>
 	<footer>
 		Copyright &copy; 2014 JavaJam Coffeee House<br>
