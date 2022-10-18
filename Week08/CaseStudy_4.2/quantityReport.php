@@ -69,7 +69,7 @@ include "php/fetchReport.php";
 				</tr>
 			</table>
 			<br><br>
-			<h3>Best Selling Product(s):</h3>
+			<h3>Best Selling Product(s): <?php bestSelling() ?></h3>
 	</div>
 	<footer>
 		Copyright &copy; 2014 JavaJam Coffeee House<br>
