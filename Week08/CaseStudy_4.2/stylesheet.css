@@ -146,3 +146,14 @@ h4 a {
     font-weight: bolder;
     font-size: large;
 }
+
+.productReport {
+    border: none;
+    border-spacing: 2px;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.productReport td, tr {
+    padding: 20px;
+}

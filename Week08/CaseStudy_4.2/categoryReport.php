@@ -32,7 +32,7 @@ include "php/fetchReport.php";
 	</div>
 	<div class="content">
 		<h1>Coffee at JavaJam</h1>
-			<table class="product-report">
+			<table class="productReport">
 				<tr>
 					<td><b>Product</b></td>
 					<td colspan="2"><b>Category</b></td>
@@ -41,33 +41,33 @@ include "php/fetchReport.php";
                 <tr>
                     <td><b>Just Java</b></td>
                     <td><i>Endless Cup</i></td>
-                    <td><?php insertCatSales(1) ?></td>
-                    <td></td>
+                    <td>$<?php insertCatSales(1) ?></td>
+                    <td>$<?php insertCatSales(1) ?></td>
 				<tr>
 					<td rowspan="2"><b>Cafe au Lait</b></td>
                     <td><i>Single</i></td>
-                    <td><?php insertCatSales(2) ?></td>
-                    <td></td>
+                    <td>$<?php insertCatSales(2) ?></td>
+                    <td colspan="2">$<?php insertCatSubTotal(2) ?></td>
 				</tr>
 				<tr>
                     <td><i>Double</i></td>
-                    <td><?php insertCatSales(3) ?></td>
+                    <td>$<?php insertCatSales(3) ?></td>
                     <td></td>
 				</tr>
                 <tr>
                     <td rowspan="2"><b>Iced Cappuccino</b></td>
                     <td><i>Single</i></td>
-                    <td><?php insertCatSales(4) ?></td>
-                    <td></td>
+                    <td>$<?php insertCatSales(4) ?></td>
+                    <td colspan="2">$<?php insertCatSubTotal(4) ?></td>
 				</tr>
                 <tr>
                     <td><i>Double</i></td>
-                    <td><?php insertCatSales(5) ?></td>
+                    <td>$<?php insertCatSales(5) ?></td>
                     <td></td>
 				</tr>
 				<tfoot>
 					<td class="total" colspan="4">
-						Total: $<span id="total-price">0</span>
+						Total: $<?php insertCatTotal() ?>0</span>
 					</td>
 				</tfoot>
 			</table>

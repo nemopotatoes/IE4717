@@ -28,6 +28,7 @@ if ($result = mysqli_query($conn, $sql)) {
 }
 $cafeTotal = 0.0;
 $cappuTotal = 0.0;
+
 //Insert new orders into database and update total_sales
 if ($justjavaqty > 0) {
 	updateOrderTable($justjavaqty, 1);
@@ -78,7 +79,7 @@ function updateOrderTable($qty, $productID) {
 		die("Connection failed: " . mysqli_connect_error());
 		return;
 	}
- 	$sql = "INSERT INTO orders (productID, qty) VALUES ($productID, $qty);";
+ 	$sql = "INSERT INTO orders (orderID, productID, qty) VALUES (NULL, $productID, $qty);";
 	if (!mysqli_query($conn, $sql)) {
 		echo "Failed to update database: " . mysqli_error($conn);
 		mysqli_close($conn);
