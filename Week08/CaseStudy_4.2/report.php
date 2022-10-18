@@ -32,8 +32,8 @@
         <br>
 		<h2>Click below to generate sales report:</h2>
         <h4>
-            <li><a href="productReport.php">By Product</a></li>
-			<li><a href="categoryReport.php">By Category</a></li>
+            <li><a href="quantityReport.php">By Quantity Sales</a></li>
+			<li><a href="dollarReport.php">By Dollar Sales</a></li>
         </h4>
         <h3>Popular option of best selling product:</h3>
         <br>
